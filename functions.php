@@ -1,11 +1,6 @@
 <?php
 	error_reporting(E_ALL);
 
-	//Includes
-	include get_template_directory() . '/inc/Tax-meta-class/Tax-meta-class.php';
-	include get_template_directory() . '/inc/taxonomies.php';
-	include get_template_directory() . '/inc/helpers.php';
-
 	//Enqueue scripts and styles
 	function ungrynerd_scripts() {
 		wp_enqueue_style('viviendu-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css');
@@ -16,7 +11,6 @@
 			wp_deregister_script('jquery');
 
 			wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','',true);
-			wp_enqueue_script('cycle-js', get_template_directory_uri() . '/js/cycle.js', array('jquery'), '2.0.1', true );
 			wp_enqueue_script('ungrynerd-js', get_template_directory_uri() . '/js/default.js', array('jquery'), '1.0.0', true );
 			wp_enqueue_script('html5shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', array(), '3.7.2');
 			wp_enqueue_script('respond', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', array(), '1.4.2');
@@ -42,11 +36,6 @@
 	}
 	add_action('widgets_init', 'remove_recent_comments_style');
 
-	//Meta Boxes
-	define( 'RWMB_URL', trailingslashit( get_stylesheet_directory_uri() . '/meta-box' ) );
-	define( 'RWMB_DIR', trailingslashit( get_stylesheet_directory() . '/meta-box' ) );
-	require_once RWMB_DIR . 'meta-box.php';
-	include 'meta-boxes.php';
 
 	// Content width
 	if ( ! isset( $content_width ) ) $content_width = 900;
@@ -92,7 +81,7 @@
 	}
 
 	// Redirección para no logueados
-	//add_action('wp','proximamente');
+	// add_action('wp','proximamente');
 	function proximamente() {
 		if ( !is_user_logged_in()) { header("Location: http://google.com/"); }
 	}

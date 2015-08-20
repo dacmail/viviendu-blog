@@ -1,3 +1,3 @@
-# viviendu
+# viviendu blog
 
-WordPress theme for viviendu.com
+Simple blog WordPress theme

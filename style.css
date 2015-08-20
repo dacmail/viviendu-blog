@@ -1,5 +1,5 @@
 /*
-	Theme Name: VIVIENDU
+	Theme Name: VIVIENDU BLOG
 	Theme URI: http://www.ungrynerd.com
 	Version: 1.0
 	Author: Daniel Aguilar
@@ -222,12 +222,12 @@ textarea {
         .main-search .container {
             max-width: 750px;
         }
-        .page .main-search h1 {
+        .main-search h1 {
             color:#fff;
             font-size: 55px;
             line-height: 55px;
         }
-        .page .main-search h2 {
+        .main-search h2 {
             color:#fff;
             font-size: 20px;
             line-height: 60px;
