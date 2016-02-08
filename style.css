@@ -85,10 +85,37 @@ textarea {
     font-size: 15px;
     text-transform: uppercase;
 }
-.wpcf7 textarea, .wpcf7 input[type=text], .wpcf7 input[type=email] {
+.wpcf7 textarea, .wpcf7 input[type=text], .wpcf7 input[type=email], .input-block {
     width: 100%;
 } 
 .voffset30 {margin-bottom:30px;}
+a.btn, input.btn {
+    border: 0px;
+    border-radius: 0px;
+    background-color: #76C0A4;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Roboto Condensed";
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    padding:5px 12px;
+    text-align: center;
+}
+    a.btn:hover, input.btn {background-color: #76C0A5;}
+    a.btn-block, input.btn-block {
+        display: block;
+        width: 100%;
+    }
+    .btn.btn-primary {
+        background-color:#323232;
+    }
+    .btn.btn-secondary {
+        background-color: rgba(118, 192, 164, 0.7);
+    }
 /* HEADER */
 #header {
     height: 52px;
@@ -491,7 +518,10 @@ textarea {
     width: 100%;
     padding-top:40px;
 }
-	#content {}
+	#content {
+        font-size: 17px;
+        line-height: 1.7;
+    }
 	p {
 		margin:20px 0px;
 	}
@@ -625,6 +655,23 @@ textarea {
     box-shadow: none;
     border:0px !important;
 }
+/* BLOG ESPECIFICO */
+.list .post {
+    margin-bottom:50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+#sidebar {
+    padding-left: 50px;
+}
+    .post ul, .post ol {
+        margin-left: 0px;
+        padding: 15px 15px 15px 50px;
+        background: #eee;
+    }
+    .section .post .title {
+        text-transform: none;
+    }
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
