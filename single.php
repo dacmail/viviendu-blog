@@ -7,9 +7,15 @@
 					<article <?php post_class(); ?>>
 						<h2 class="title nm"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
 						<div class="subtitle tit-sep">Escrito el <?php the_time(get_option('date_format')); ?> en <?php the_category(', ', ''); ?></div>
+						<div class="text"><div class="addthis_sharing_toolbox"></div></div>
 						<div class="text">
 							<?php the_content(); ?>
 						</div>
+						<div class="text">
+							<h3 class="tit-sep">¿Te ha gustado el artículo? ¡Compártelo!</h3>
+							<div class="addthis_sharing_toolbox"></div>
+						</div>
+
 					</article>
 				<?php endwhile; ?>
 				<div class="pagination container">
