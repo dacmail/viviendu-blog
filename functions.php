@@ -109,4 +109,32 @@
 	     </article>
 	<?php
 	}
+
+	add_shortcode('formulario', 'viviendu_newsletter_form' );
+	function viviendu_newsletter_form() {
+		return '<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup" class="inpost">
+				<form action="//viviendu.us11.list-manage.com/subscribe/post?u=6421e5c37cf26359595d46661&amp;id=9a3c34f176" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll" class="row">
+				    	<div class="col-sm-12">
+				    		<h3 class="tit-sep">¿Quieres recibir en tu email contenidos como este?</h3>
+				    	</div>
+						<div class="mc-field-group col-sm-8">
+							<p><input type="email" value="" placeholder="Correo electrónico" name="EMAIL" class="required email input-block" id="mce-EMAIL"></p>
+							<p class="legal"><input type="checkbox" name="legal" id="legal" checked> <label for="legal">Acepto <a href="http://viviendu.com/aviso-legal/" target="_blank">términos y condiciones</a> para recibir alertas</label></p>
+						</div>
+						<div class="col-sm-4">
+				    		<input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-block btn-contact btn-newsletter">
+				    	</div>
+
+						<div id="mce-responses" class="col-sm-12">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6421e5c37cf26359595d46661_9a3c34f176" tabindex="-1" value=""></div>
+				    </div>
+				</form>
+				</div>
+				<!--End mc_embed_signup-->';
+	}
 ?>

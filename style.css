@@ -528,6 +528,14 @@ a.btn, input.btn {
 	#content .post-content ul, #content .post-content ol {
 		margin:10px;
 	}
+    .text .inpost {
+        padding:15px 15px 0px 15px;
+        background-color: #fafafa;
+        margin:15px 0px 30px 0px;
+    }
+    .text .inpost p {
+        margin-top:0px;
+    }
 	.sidebar {}
         .sidebar .widget {
             margin-bottom: 35px;
