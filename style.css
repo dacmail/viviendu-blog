@@ -528,6 +528,10 @@ a.btn, input.btn {
 	#content .post-content ul, #content .post-content ol {
 		margin:10px;
 	}
+    .text img.alignnone {
+        width:100%;
+        height: auto;
+    }
     .text .inpost {
         padding:15px 15px 0px 15px;
         background-color: #fafafa;
@@ -674,11 +678,18 @@ a.btn, input.btn {
 }
     .post ul, .post ol {
         margin-left: 0px;
+        margin-top:15px;
         padding: 15px 15px 15px 50px;
-        background: #eee;
+        background: #fafafa;
     }
     .section .post .title {
         text-transform: none;
+    }
+    .post h2 {
+        font-size: 30px;
+    }
+    .post h3 {
+        font-size: 25px;
     }
 /* =WordPress Core
 -------------------------------------------------------------- */
