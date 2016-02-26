@@ -59,7 +59,7 @@ img {
     height: auto;
 }
 input[type=text], input[type=email] {
-    background-color: transparent;
+    background-color: #fff;
     border:1px solid #E5E5E5;
     border-radius: 10px;
     height: 40px;
