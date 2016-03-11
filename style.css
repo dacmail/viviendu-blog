@@ -41,6 +41,7 @@ a:hover {
     opacity: 0.7;
 }
 a img, :link img, :visited img {border: 0;}
+img {max-width: 100% !important;}
 body {
 	font-family:"Roboto";
     color:#7F7F7F;
