@@ -13,9 +13,9 @@
 			wp_enqueue_script('jquery','/wp-includes/js/jquery/jquery.js','','',true);
 			wp_enqueue_script('ungrynerd-js', get_template_directory_uri() . '/js/default.js', array('jquery'), '1.0.0', true );
 			wp_enqueue_script('addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-566e723b50e69a9e', '', '', true );
-			wp_enqueue_script('html5shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', array(), '3.7.2');
-			wp_enqueue_script('respond', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', array(), '1.4.2');
-			
+			wp_enqueue_script('html5shiv', '//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', array(), '3.7.2');
+			wp_enqueue_script('respond', '//oss.maxcdn.com/respond/1.4.2/respond.min.js', array(), '1.4.2');
+
 			wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 			wp_script_add_data( 'respond', 'conditional', 'lt IE 9' );
 		}
@@ -84,7 +84,7 @@
 	// Redirección para no logueados
 	// add_action('wp','proximamente');
 	function proximamente() {
-		if ( !is_user_logged_in()) { header("Location: http://google.com/"); }
+		if ( !is_user_logged_in()) { header("Location: https://google.com/"); }
 	}
 
 	// Oculta la barra de administración
@@ -121,7 +121,7 @@
 				    	</div>
 						<div class="mc-field-group col-sm-8">
 							<p><input type="email" value="" placeholder="Correo electrónico" name="EMAIL" class="required email input-block" id="mce-EMAIL"></p>
-							<p class="legal"><input type="checkbox" name="legal" id="legal" checked> <label for="legal">Acepto <a href="http://viviendu.com/aviso-legal/" target="_blank">términos y condiciones</a> para recibir alertas</label></p>
+							<p class="legal"><input type="checkbox" name="legal" id="legal" checked> <label for="legal">Acepto <a href="https://viviendu.com/aviso-legal/" target="_blank">términos y condiciones</a> para recibir alertas</label></p>
 						</div>
 						<div class="col-sm-4">
 				    		<input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-block btn-contact btn-newsletter">
